@@ -1,0 +1,27 @@
+#number guessing game 
+import random
+def getRandomNumber():
+    return random.randrange(1, 100)
+
+def giveHint(number, guess):
+    if guess > (number + 5) or guess < (number - 5):
+        return "Far away "
+    elif number == guess:
+        return "Right"
+    else:
+        return "So close "
+
+def runGuess():
+    secretNumber = getRandomNumber()
+    # Update the code below
+    while True:
+        user_guess = int(input("Enter a number between 1 and 100: "))
+        hint = giveHint(secretNumber, user_guess)
+        if hint == "Right":
+            print("You guessed it Right!")
+            break    
+        else:
+            print(hint)
+            
+if __name__ == '__main__':
+    runGuess()
