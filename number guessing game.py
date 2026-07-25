@@ -1,5 +1,6 @@
 #number guessing game 
 import random
+print("Computer choosed a Number ! Now You Have To Find That Number ")
 def getRandomNumber():
     return random.randrange(1, 100)
 
@@ -13,7 +14,6 @@ def giveHint(number, guess):
 
 def runGuess():
     secretNumber = getRandomNumber()
-    # Update the code below
     while True:
         user_guess = int(input("Enter a number between 1 and 100: "))
         hint = giveHint(secretNumber, user_guess)
