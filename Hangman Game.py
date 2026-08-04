@@ -4,7 +4,7 @@ from replit import clear
 
 
 print(f"{"Hangman":~^100}")
-word_list=["apple","python","mobile","school","table","cycle"]
+word_list=["apple","python","mobile","school","table","cycle","dog","cat","house","computer","laptop","keyboard","mouse","monitor","programming","language","internet","network","database","algorithm","function","variable","loop","condition","array","string","integer","float","boolean","class","object","method","inheritance","polymorphism","encapsulation","abstraction","constructor","destructor"]
 chosen_word = random.choice(word_list)
 word_length = len(chosen_word)
 
