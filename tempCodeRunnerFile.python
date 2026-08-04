@@ -1,0 +1,4 @@
+#Higher lower game 
+statement="welcome to the higer lower game !"
+statement2=f"{statement:-^120}"
+print(statement2)
