@@ -1,4 +1,7 @@
-#Higher lower game 
-statement="welcome to the higer lower game !"
-statement2=f"{statement:-^120}"
-print(statement2)
+#coffee machine program
+order="apple"
+while order!="off":
+    report={"water":1000,
+             "milk":500,
+             "cocoa":100}
+    print(f"Water: {report['water']}ml")
