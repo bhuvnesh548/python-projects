@@ -1,7 +1,16 @@
-#coffee machine program
-order="apple"
-while order!="off":
-    report={"water":1000,
-             "milk":500,
-             "cocoa":100}
-    print(f"Water: {report['water']}ml")
+#coffe machine 
+menu={"espresso":{"ingredients":{"water":150,"coffee":25},"cost":10},
+      "latte":{"ingredients":{"water":75,"milk":75,"coffee":25},"cost":15},
+      "capucchino":{"ingredient":{"water":50,"milk":100,"coffee":25},"cost":20}
+      }
+resources={"water":1000,
+           "milk":500,
+           "coffee":200}
+# for i,j in resources.items():
+#     print(i,":",j)
+print(f"{"welcome to the coffee machine":-^120}")
+while (choice:=(input("\nwhat do you want?(espresso/latte/capucchino) : "))!="off"):
+    for i,j in resources.items():
+        print(i,":",j,end=" ")
+
+    pass
