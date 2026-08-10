@@ -18,7 +18,7 @@ def resource_sufficient(ingredient):
             resources[item]=resources[item]-ingredient[item]
 
 
-print(f"{"welcome to the coffee machine":~^100}")
+print(f"{"welcome to the coffee 🍵 machine":~^100}")
 ison=True
 while ison:
     choice=input("what do you want?(espresso/latte/capucchino) : ")
@@ -50,7 +50,7 @@ while ison:
         if resource_sufficient(things)!=False:       
             pay=int(input(f"please pay ₹10  :"))
             if pay==10: 
-                print(f"here is your {choice}")
+                print(f"here is your {choice} 🍵")
                 sales.append(pay)
                 profit=sum(sales)       
             
@@ -60,7 +60,7 @@ while ison:
         if resource_sufficient(things)!=False:     
             pay=int(input(f"please pay ₹20 :"))
             if pay==20: 
-                print(f"here is your {choice}")
+                print(f"here is your {choice} 🍵")
                 sales.append(pay)
                 profit=sum(sales)   
     elif choice=="latte":
@@ -69,7 +69,7 @@ while ison:
         if resource_sufficient(things)!=False:
             pay=int(input(f"please pay ₹30 :"))
             if pay==15: 
-                print(f"here is your {choice}")
+                print(f"here is your {choice} 🍵")
                 sales.append(pay)
                 profit=sum(sales)   
     else:
