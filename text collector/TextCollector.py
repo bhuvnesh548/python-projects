@@ -6,9 +6,14 @@ while on:
     t=input()
     if t=="@":
         on=False
+    elif t=="!":
+        Text.remove(Text[-1])
+        t1=input("Update last line : ")
+        Text.append(t1)        
     else:
         textenter=t+"\n"
-        text=Text.append(textenter)
+        Text.append(textenter)
+    
 
 if on==False:
     for i in Text:
